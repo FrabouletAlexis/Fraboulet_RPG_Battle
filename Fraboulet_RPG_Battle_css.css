@@ -1,0 +1,113 @@
+body {
+	background-size: cover;
+	background-image: url(image/landscape.png);
+	background-position: center;
+	display: flex;
+	justify-content:center;
+	flex-direction:column-reverse;
+	}
+
+.interfacePerso{
+	margin: 50px;
+	display: flex;
+	border: thick double #776398;
+	border-radius: 10px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content:space-around;
+	width: auto;
+}
+	
+perso{
+	margin: 5px;
+	background-size: cover;
+	background-image: url(image/Background_combat.jpg);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 4px ridge #000030;
+	border-radius: 5px;
+	width: auto;
+	height: auto;
+	
+}
+
+.info_hero{
+	margin: 5px;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	align-content:space-around;
+}
+
+.heros{
+	background-color:#CCDAE2;
+	margin: 5px;
+	text-align:center;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 100px;
+	
+}
+.stat{
+	background-color:#CCDAE2;
+	margin: 5px;
+	display: flex;
+	flex-direction:row-reverse;
+	align-items:center;
+	justify-content: space-around;
+	border: 1px solid;
+	border-radius: 5px;
+	width: auto;
+	height: auto;
+}
+.type_stat{
+	display: flex;
+	flex-direction:column;
+}
+.valeur_stat{
+	display: flex;
+	flex-direction:column;
+}
+.action{
+	margin: 5px;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+	
+}
+.bouton{
+	margin: 5px;
+	border: 2px ridge #000030;
+	width: auto;
+	height: auto;
+}
+	
+.monstre{
+	display:flex;
+	justify-content:space-around;
+}
+.monstre_1{
+	display:flex;
+	background-image: url(image/enemies/enemies_armored_sheepman.png);
+	background-size: cover;
+	background-position: center;
+	width: 300px;
+	height:300px;
+}
+.monstre_2{
+	display:flex;
+	background-image: url(image/enemies/enemies_blue_sheepman.png);
+	background-size: cover;
+	background-position: center;
+	width: 300px;
+	height:300px;
+}
+.monstre_3{
+	display:flex;
+	background-image: url(image/enemies/enemies_elder_sheepman.png);
+	background-size: cover;
+	background-position: center;
+	width: 300px;
+	height:300px;
+}
