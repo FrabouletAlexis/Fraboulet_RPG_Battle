@@ -53,3 +53,5 @@ pv_monstre_3 = 130;
 nom_monstre_1 = "Shield sheepman";
 nom_monstre_2 = "Blue sheepman";
 nom_monstre_3 = "Elder sheepman";
+
+pv_heros_1 = 100;
