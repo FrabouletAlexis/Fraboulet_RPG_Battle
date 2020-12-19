@@ -3,10 +3,12 @@ body {
 	background-image: url(image/landscape.png);
 	background-position: center;
 	display: flex;
-	justify-content:center;
-	flex-direction:column-reverse;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+	
 	}
-
+/* ------- PANNEAU PERSONNAGES --------*/
 .interfacePerso{
 	margin: 50px;
 	display: flex;
@@ -15,7 +17,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content:space-around;
-	width: auto;
+	
 }
 	
 perso{
@@ -41,7 +43,7 @@ perso{
 }
 
 .heros{
-	background-color:#CCDAE2;
+	background-color:#89bbd8;
 	margin: 5px;
 	text-align:center;
 	border: 1px solid;
@@ -81,33 +83,102 @@ perso{
 	border: 2px ridge #000030;
 	width: auto;
 	height: auto;
+	cursor:pointer;
 }
-	
+
+/* -------- PANNEAU MONSTRE --------*/
+
 .monstre{
 	display:flex;
 	justify-content:space-around;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content:space-around;
+	
 }
+#stat_monstre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:#9ca1b6;
+	margin: 5px;
+	border: 5px solid;
+	border-radius: 5px;
+}
+.pv_monstre{
+	display: flex;
+	flex-direction:row-reverse;
+	align-items:center;
+	justify-content: space-around;
+	width: 80%;
+	height: auto;
+	
+	
+}
+
 .monstre_1{
+	margin: 5px;
+
 	display:flex;
+	flex-direction: column;
+	align-items:center;
+	
 	background-image: url(image/enemies/enemies_armored_sheepman.png);
 	background-size: cover;
 	background-position: center;
-	width: 300px;
+	width: 250px;
 	height:300px;
 }
 .monstre_2{
+	margin: 5px;
 	display:flex;
 	background-image: url(image/enemies/enemies_blue_sheepman.png);
 	background-size: cover;
 	background-position: center;
-	width: 300px;
+	width: 250px;
 	height:300px;
 }
 .monstre_3{
+	margin: 5px;
 	display:flex;
 	background-image: url(image/enemies/enemies_elder_sheepman.png);
 	background-size: cover;
 	background-position: center;
-	width: 300px;
+	width: 250px;
 	height:300px;
+}
+
+/* -------- Boite dialogue --------*/
+#boite_dialogue{
+	display:flex;
+	justify-content: center;
+	background-color:#CCDAE2;
+	margin: 5px;
+	text-align:center;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 100px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content:space-around;
+	width: 90%;
+	height:20%;
+}
+
+/* -------- teste --------*/
+
+
+.nom .show{  
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
 }
