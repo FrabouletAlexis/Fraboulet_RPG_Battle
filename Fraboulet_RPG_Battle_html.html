@@ -4,7 +4,7 @@
 	</head>
 
 	<body>
-	<script src="Fraboulet_RPG_Battle_Java.js"></script>
+	
 		
 	<div class="background">
 
@@ -20,7 +20,7 @@
 								<div class="a"> DEF</div>
 							</div>
 							<div class="valeur_stat">
-								<div id="pv_heros_1"></div>
+								<div id="pv_heros_1">000</div>
 								<div id="pm_heros_1">130</div>
 								<div id="attaque_heros_1">130</div>
 								<div id="defence_heros_1">130</div>
@@ -108,20 +108,35 @@
 		</div>
     </div>
 	<monstre>
+
 		<div class="monstre">
-			<div class="monstre_1">
-				<div class="nom_monstre_1"> </div>
-				<div class="pv_monstre_1"> </div>
+			<div class="monstre_1" onmouseover="stat_monstre()" onmouseout="stat_monstre()">
+				<div id="stat_monstre"style="visibility:hidden;">
+					<div id="nom_monstre_1" > Armored Sheepman </div>
+					<div class= "pv_monstre">
+						<div class="type_stat">
+							<div class="a"> PV</div>
+						</div>
+						<div class="valeur_stat">
+							<div id="pv_monstre_1"></div>
+						</div>
+					</div>		
+				</div>
 			</div>
-			<div class="monstre_2">
-				<div class="nom_monstre_2"> </div>
-				<div class="pv_monstre_2"> </div>
+
+			<div class="monstre_2" onclick="stat_monstre_2()">
+				<div class= "stat_monstre" onclick="stat_monstre()">
+					<span class="nom" id="nom_monstre_2">JOJO </span>
+					<span class="pv" id="pv_monstre_2"> 0220</span>
+				</div>
 			</div>
 			<div class="monstre_3">
-				<div class="nom_monstre_3"> </div>
-				<div class="pv_monstre_3"> </div>
+				<div id="nom_monstre_3"> </div>
+				<div id="pv_monstre_3"> </div>
 			</div>
 		</div>
-	</monstre>	
+	</monstre>
+	<div id = "boite_dialogue">...</div>	
 	</body>
+	<script src="Fraboulet_RPG_Battle_Java.js"></script>
 </html>
