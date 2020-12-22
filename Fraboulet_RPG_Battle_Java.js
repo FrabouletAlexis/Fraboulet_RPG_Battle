@@ -797,7 +797,7 @@ function tir_charge () {
 					textAction.innerHTML = "Lussan inflige "+degat_tir_charge+" points de dégats au Blue Sheepman.";
 					if (pv_monstre_2.value <= 0){
 						function mort_monstre_2(){
-							pv_monstre_1.innerHTML = 0;
+							pv_monstre_2.innerHTML = 0;
 							textAction.innerHTML = "Lussan a vaincu le Blue Sheepman."
 							monstre_2.style.backgroundImage="url()";
 						}
